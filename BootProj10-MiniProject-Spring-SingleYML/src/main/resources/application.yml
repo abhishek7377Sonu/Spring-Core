@@ -1,0 +1,60 @@
+
+spring:
+  profiles:
+    active: prod
+
+---
+
+spring:
+  profiles:
+    default: dev
+---
+
+#spring:
+#  profiles:
+#    include: test
+#    
+#---
+
+spring:
+  config.activate.on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    type: org.apache.commons.dbcp2.BasicDataSource
+    url: jdbc:mysql:///ntspbms615db
+    username: root
+    
+---
+
+spring:
+  config.activate.on-profile: test
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    password: root
+    type: org.apache.tomcat.jdbc.pool.DataSource
+    url: jdbc:mysql:///ntspbms615db
+    username: root
+    
+---
+
+spring:
+  config.activate.on-profile: uat
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: krishna
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: abhishek
+    
+---
+
+spring:
+  config.activate.on-profile: prod
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: krishna
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: abhishek
+
+
+  
