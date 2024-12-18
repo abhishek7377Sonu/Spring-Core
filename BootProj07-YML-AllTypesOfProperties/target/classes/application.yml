@@ -1,0 +1,27 @@
+per:
+  info:
+    favColors: [red,green,blue]  #Inline Formatting
+    
+    id-details:
+      voterId: 78452165
+    idDetails:
+      aadharNo: 295686575078
+      panNo: HJZY154254
+    job-info:
+      deptNo: 6678
+    jobInfo:
+      company: MCL
+      desg: CLERK
+    phoneNumbers:
+    - 999999999
+    - 888888888
+    - 777777777
+    pid: 1001
+    pname: Biraj
+    studies:
+    - 10+2-MPC
+    - B.Tech-CSE
+    - M.Tech-IT
+spring:
+  application:
+    name: BootProj06-ConfigurationPropertiesAnnotation-2
