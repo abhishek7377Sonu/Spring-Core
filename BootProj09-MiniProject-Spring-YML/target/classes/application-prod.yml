@@ -1,0 +1,8 @@
+spring:
+  application:
+    name: BootProj03-MiniProject-LayeredApp
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    password: krishna
+    url: jdbc:oracle:thin:@localhost:1521:orcl
+    username: abhishek
